@@ -6,7 +6,7 @@ set -euo pipefail
 # Installs zsh, git, curl and unzip; installs Oh My Zsh and recommended plugins
 
 install_pkgs() {
-    local pkgs=(zsh git curl unzip)
+    local pkgs=(zsh git curl unzip fzf)
 
     if command -v dnf >/dev/null 2>&1; then
         echo "Detected Fedora (dnf). Installing: ${pkgs[*]}"
